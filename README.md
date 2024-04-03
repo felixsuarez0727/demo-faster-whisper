@@ -22,17 +22,13 @@ source venv/Scripts/activate  # On Windows, use `venv\Scripts\activate`
 pip install faster-whisper
 ```
 
-3. Run the Python script `transcribe_audio.py`. Make sure to replace `audio_files_for_testing/audio_test_1.mp3` with the path to your audio file:
-
-```bash
-pip install faster-whisper
-```
+3. Run the Python script `transcribe_audio.py`. Make sure to replace `audio_files_for_testing/audio_test_1.mp3` with the path to your audio file if necessary:
 
 ```bash
 python transcribe_audio.py
 ```
 
-This will transcribe the audio file specified and save the results to a text file named `transcription_result.txt`.
+This will transcribe the audio file specified, print on console and save the results to a text file named `transcription_result.txt`.
 
 <img src="./imgs/transcription_result.png"/>
 
@@ -70,7 +66,7 @@ This will execute the Python script inside the Docker container, transcribe the 
 
 <img src="./imgs/docker_transcription_result.png"/>
 
-## 📂 Additional Notes
+## ℹ️ Additional Notes
 
 - Ensure that the audio file path specified in the script is correct and accessible.
 - The Docker image can be used to run the transcription in an isolated environment without worrying about dependencies.
