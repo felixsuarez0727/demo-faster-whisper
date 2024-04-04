@@ -25,6 +25,7 @@ pip install faster-whisper
 3. Run the Python script `transcribe_audio.py`. Make sure to replace `audio_files_for_testing/audio_test_1.mp3` with the path to your audio file if necessary:
 
 ```bash
+cd dockerfile_script
 python transcribe_audio.py
 ```
 
@@ -32,11 +33,12 @@ This will transcribe the audio file specified, print on console and save the res
 
 <img src="./imgs/transcription_result.png"/>
 
-## 🐳 Using Docker Image
+## 🐳 Using DockerFile for the script
 
-1. Build the Docker image:
+1. Build the Docker image inside the `dockerfile_script` folder:
 
 ```bash
+cd dockerfile_script
 docker build -t whisper_transcription_container .
 ```
 
@@ -70,3 +72,55 @@ This will execute the Python script inside the Docker container, transcribe the 
 
 - Ensure that the audio file path specified in the script is correct and accessible.
 - The Docker image can be used to run the transcription in an isolated environment without worrying about dependencies.
+
+## 🧑🏻‍💻 Using the Fast API Endpoint
+
+1. Set Up a Virtual Environment:
+
+```bash
+python -m venv venv
+source venv/Scripts/activate  # On Windows, use `venv\Scripts\activate`
+```
+
+2. Install Dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the FastAPI Application:
+
+```bash
+uvicorn transcription_endpoint:app --reload
+```
+
+This will start the FastAPI application, and you can access the endpoint at `http://127.0.0.1:8000/docs#/default/transcribe_audio_transcribe_audio__post`.
+
+4. **Results**
+
+<img src="./imgs/endpoint_results.png"/>
+
+## 🌐🌏 Using the DockerFile for the FastAPI Endpoint:
+
+1. Build the Docker image inside the `dockerfile_endpoint` folder:
+
+```bash
+cd dockerfile_endpoint
+docker build -t dockerfile_endpoint .
+```
+
+<img src="./imgs/build_dockerfile_endpoint.png"/>
+
+2. Run the Docker Container:
+
+```bash
+docker run -p 80:8000 dockerfile_endpoint
+```
+
+<img src="./imgs/build_dockerfile_endpoint.png"/>
+
+This will start the FastAPI application, and you can access the endpoint at `http://localhost/docs#/default/transcribe_audio_transcribe_audio__post`.
+
+4. **Results**
+
+<img src="./imgs/docker_endpoint_results.png"/>

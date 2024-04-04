@@ -10,7 +10,7 @@ model = WhisperModel(model_size, device="cpu", compute_type="int8")
 
 # Transcribe audio
 segments, info = model.transcribe(
-    "./audio_files_for_testing/audio_test_1.mp3", beam_size=5)
+    "./audios_for_testing/audio_test_1.mp3", beam_size=5)
 
 # Print language detection information
 print("Detected language '%s' with probability %f" %
