@@ -123,7 +123,7 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 <img src="./imgs/docker_endpoint_results.png"/>
 
-## 🕵️ Audio File Testing on 4CPU/4GB GCP Instance
+## 🕵️ Audio File Testing on 4CPU/ 4GB GCP Instance
 
 1. Audio `gb0.wav`
 
@@ -158,7 +158,7 @@ Processing Time: `0 hours, 2 minutes, 47 seconds`
 | hp0.wav    | 0     | 9       | 32      |
 | mm0.wav    | 0     | 2       | 47      |
 
-## 🕵️ Audio File Testing on 6CPU cores/16GB Local Machine
+## 🕵️ Audio File Testing on 6CPU cores/ 16GB Local Machine
 
 1. All audios:
 
