@@ -1,6 +1,6 @@
 # 🤖 Whisper Transcription
 
-This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/faster-whisper) package for transcribing audio files using the Whisper model. The faster-whisper package is a reimplementation of OpenAI's Whisper model using CTranslate2.[OpenAI's Whisper model](https://github.com/openai/whisper) is an advanced implementation of Automatic Speech Recognition (ASR). It employs modern deep learning techniques to accurately transcribe human speech into text. Whisper has been trained on a large amount of high-quality audio data, enabling it to recognize a wide range of dialects and accents. Its accuracy and speed make it ideal for real-time transcription applications.
+This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/faster-whisper) package for transcribing audio files using the Whisper model. The faster-whisper package is a reimplementation of OpenAI's Whisper model using CTranslate2. [OpenAI's Whisper model](https://github.com/openai/whisper) is an advanced implementation of Automatic Speech Recognition (ASR). It employs modern deep learning techniques to accurately transcribe human speech into text. Whisper has been trained on a large amount of high-quality audio data, enabling it to recognize a wide range of dialects and accents. Its accuracy and speed make it ideal for real-time transcription applications.
 
 ## 🛠️Prerequisites
 
