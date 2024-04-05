@@ -1,6 +1,6 @@
 # 🤖 Whisper Transcription
 
-This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/faster-whisper) package to transcribe audio files using the Whisper model.
+This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/faster-whisper) package for transcribing audio files using the Whisper model. The faster-whisper package is a reimplementation of OpenAI's Whisper model using CTranslate2.[OpenAI's Whisper model](https://github.com/openai/whisper) is an advanced implementation of Automatic Speech Recognition (ASR). It employs modern deep learning techniques to accurately transcribe human speech into text. Whisper has been trained on a large amount of high-quality audio data, enabling it to recognize a wide range of dialects and accents. Its accuracy and speed make it ideal for real-time transcription applications.
 
 ## 🛠️Prerequisites
 
@@ -25,7 +25,6 @@ pip install faster-whisper
 3. Run the Python script `transcribe_audio.py`. Make sure to replace `audio_files_for_testing/audio_test_1.mp3` with the path to your audio file if necessary:
 
 ```bash
-cd dockerfile_script
 python transcribe_audio.py
 ```
 
@@ -38,7 +37,6 @@ This will transcribe the audio file specified, print on console and save the res
 1. Build the Docker image inside the `dockerfile_script` folder:
 
 ```bash
-cd dockerfile_script
 docker build -t whisper_transcription_container .
 ```
 
