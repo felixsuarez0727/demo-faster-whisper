@@ -1,0 +1,243 @@
+Detected language 'en' with probability 0.980468
+[0.00s -> 3.24s]  Good morning. This Tuesday is election day.
+[3.24s -> 6.00s]  After months of spirited debate and vigorous campaigning,
+[6.00s -> 8.64s]  the time has come for Americans to make important decisions
+[8.64s -> 10.14s]  about our nation's future.
+[10.14s -> 13.76s]  I encourage all Americans to go to the polls and vote.
+[13.76s -> 16.10s]  Election season brings out the spirit of competition
+[16.10s -> 18.10s]  between our political parties,
+[18.10s -> 20.26s]  and that competition is an essential part
+[20.26s -> 21.76s]  of a healthy democracy.
+[21.76s -> 23.50s]  But as the campaigns come to a close,
+[23.50s -> 26.00s]  Republicans, Democrats, and independents
+[26.00s -> 29.14s]  can find common ground on at least one point.
+[29.14s -> 31.58s]  Our system of representative democracy
+[31.58s -> 34.44s]  is one of America's greatest strengths.
+[34.44s -> 36.24s]  The United States was founded on the belief
+[36.24s -> 38.28s]  that all men are created equal.
+[38.28s -> 41.44s]  Every election day, millions of Americans of all races,
+[41.44s -> 43.90s]  religions, and backgrounds step into voting booths
+[43.90s -> 45.30s]  throughout the nation.
+[45.30s -> 47.78s]  Whether they are rich or poor, old or young,
+[47.78s -> 50.70s]  each of them has an equal share in choosing the path
+[50.70s -> 52.44s]  that our country will take.
+[52.44s -> 54.90s]  And every ballot they cast is a reminder
+[54.90s -> 58.30s]  that our founding principles are alive and well.
+[58.30s -> 59.10s]  Voting is one of the great
+[59.10s -> 61.70s]  privileges of American citizenship,
+[61.70s -> 64.46s]  and it has always required brave defenders.
+[64.46s -> 66.00s]  As you head to the polls next week,
+[66.00s -> 68.36s]  remember the sacrifices that have been made
+[68.36s -> 71.00s]  by generations of Americans in uniform
+[71.00s -> 72.94s]  to preserve our way of life.
+[72.94s -> 74.76s]  From Bunker Hill to Baghdad,
+[74.76s -> 76.70s]  the men and women of American Armed Forces
+[76.70s -> 79.90s]  have been devoted guardians of our democracy.
+[79.90s -> 81.76s]  All of us owe them and their families
+[81.76s -> 85.16s]  a special debt of gratitude on election day.
+[85.16s -> 87.50s]  Americans should also remember the important example
+[87.50s -> 88.50s]  that our elections set
+[88.50s -> 90.10s]  throughout the world.
+[90.10s -> 92.06s]  Young democracies from Georgia and Ukraine
+[92.06s -> 94.54s]  to Afghanistan and Iraq can look to the United States
+[94.54s -> 97.50s]  for proof that self-government can endure.
+[97.50s -> 100.40s]  And nations that still live under tyranny and oppression
+[100.40s -> 104.10s]  can find hope and inspiration in our commitment to liberty.
+[104.10s -> 105.16s]  For more than two centuries,
+[105.16s -> 107.80s]  Americans have demonstrated the ability of free people
+[107.80s -> 109.60s]  to choose their own leaders.
+[109.60s -> 111.90s]  Our nation has flourished because of its commitment
+[111.90s -> 114.66s]  to trusting the wisdom of our citizenry.
+[114.66s -> 116.06s]  In this year's election,
+[116.06s -> 118.30s]  we will see this tradition continue.
+[118.30s -> 124.74s]  And we will be reminded once again that we are blessed to live in a free nation, guided by the will of the people.
+[125.24s -> 126.24s]  Thank you for listening.
+
+Processing time: 0 hours, 5 minutes, 49 secondsDetected language 'en' with probability 0.998954
+[0.00s -> 1.60s]  Cold and Windy
+[1.60s -> 3.90s]  Is it cold out?
+[4.26s -> 6.62s]  Yes, it's cold and windy.
+[6.94s -> 8.58s]  I'm going to wear my heavy coat.
+[8.86s -> 10.66s]  Good idea. Where are you going?
+[10.88s -> 11.86s]  To the post office.
+[12.20s -> 12.58s]  Why?
+[12.86s -> 13.98s]  To mail this package.
+[14.32s -> 15.82s]  Would you buy some stamps for me?
+[16.18s -> 17.80s]  Sure. How many do you want?
+[18.14s -> 20.44s]  Ten. Here's the money for the stamps.
+[20.74s -> 24.18s]  Okay. I'll be back in twenty minutes, unless I get blown away.
+Detected language 'en' with probability 0.999740
+[0.00s -> 1.40s]  What did you do yesterday?
+[2.58s -> 6.68s]  Hi, how are you? You look tired. Did you sleep okay last night?
+[7.04s -> 8.28s]  No, I didn't.
+[8.52s -> 10.14s]  Why? What did you do yesterday?
+[10.48s -> 13.60s]  I went to a nightclub last night and danced all night.
+[13.74s -> 15.50s]  Oh yeah? Did you have a good time?
+[15.60s -> 18.30s]  I had a wonderful time, but I'm beat today.
+[18.84s -> 20.06s]  What time did you leave the nightclub?
+[20.48s -> 22.20s]  I left at about 3 a.m.
+[22.42s -> 25.70s]  I'm not surprised that you're tired. Which nightclub did you go to?
+[25.70s -> 29.18s]  Fantastic. It's on Ontario Street. It's really nice.
+[30.00s -> 59.98s]  Thank you.
+Detected language 'en' with probability 0.980468
+[0.00s -> 3.24s]  Good morning. This Tuesday is election day.
+[3.24s -> 6.00s]  After months of spirited debate and vigorous campaigning,
+[6.00s -> 8.64s]  the time has come for Americans to make important decisions
+[8.64s -> 10.14s]  about our nation's future.
+[10.14s -> 13.76s]  I encourage all Americans to go to the polls and vote.
+[13.76s -> 16.10s]  Election season brings out the spirit of competition
+[16.10s -> 18.10s]  between our political parties,
+[18.10s -> 20.26s]  and that competition is an essential part
+[20.26s -> 21.76s]  of a healthy democracy.
+[21.76s -> 23.50s]  But as the campaigns come to a close,
+[23.50s -> 26.00s]  Republicans, Democrats, and independents
+[26.00s -> 29.14s]  can find common ground on at least one point.
+[29.14s -> 31.58s]  Our system of representative democracy
+[31.58s -> 34.44s]  is one of America's greatest strengths.
+[34.44s -> 36.24s]  The United States was founded on the belief
+[36.24s -> 38.28s]  that all men are created equal.
+[38.28s -> 41.44s]  Every election day, millions of Americans of all races,
+[41.44s -> 43.90s]  religions, and backgrounds step into voting booths
+[43.90s -> 45.30s]  throughout the nation.
+[45.30s -> 47.78s]  Whether they are rich or poor, old or young,
+[47.78s -> 50.70s]  each of them has an equal share in choosing the path
+[50.70s -> 52.44s]  that our country will take.
+[52.44s -> 54.90s]  And every ballot they cast is a reminder
+[54.90s -> 58.30s]  that our founding principles are alive and well.
+[58.30s -> 59.10s]  Voting is one of the great
+[59.10s -> 61.70s]  privileges of American citizenship,
+[61.70s -> 64.46s]  and it has always required brave defenders.
+[64.46s -> 66.00s]  As you head to the polls next week,
+[66.00s -> 68.36s]  remember the sacrifices that have been made
+[68.36s -> 71.00s]  by generations of Americans in uniform
+[71.00s -> 72.94s]  to preserve our way of life.
+[72.94s -> 74.76s]  From Bunker Hill to Baghdad,
+[74.76s -> 76.70s]  the men and women of American Armed Forces
+[76.70s -> 79.90s]  have been devoted guardians of our democracy.
+[79.90s -> 81.76s]  All of us owe them and their families
+[81.76s -> 85.16s]  a special debt of gratitude on election day.
+[85.16s -> 87.50s]  Americans should also remember the important example
+[87.50s -> 88.50s]  that our elections set
+[88.50s -> 90.10s]  throughout the world.
+[90.10s -> 92.06s]  Young democracies from Georgia and Ukraine
+[92.06s -> 94.54s]  to Afghanistan and Iraq can look to the United States
+[94.54s -> 97.54s]  for proof that self-government can endure,
+[97.54s -> 100.40s]  and nations that still live under tyranny and oppression
+[100.40s -> 104.10s]  can find hope and inspiration in our commitment to liberty.
+[104.10s -> 106.56s]  For more than two centuries, Americans have demonstrated
+[106.56s -> 109.60s]  the ability of free people to choose their own leaders.
+[109.60s -> 111.90s]  Our nation has flourished because of its commitment
+[111.90s -> 114.64s]  to trusting the wisdom of our citizenry.
+[114.64s -> 118.14s]  In this year's election, we will see this tradition continue,
+[118.14s -> 120.28s]  and we will be reminded once again
+[120.28s -> 122.64s]  that we are blessed to live in a free nation
+[122.64s -> 125.50s]  guided by the will of the people.
+[125.50s -> 126.70s]  Thank you for listening.
+Detected language 'en' with probability 0.993559
+[0.44s -> 7.86s]  My fellow Americans, this day has brought terrible news and great sadness to our country.
+[9.02s -> 16.40s]  At 9 o'clock this morning, Mission Control in Houston lost contact with our space shuttle Columbia.
+[18.18s -> 22.88s]  A short time later, debris was seen falling from the skies above Texas.
+[24.58s -> 28.06s]  The Columbia is lost. There are no survivors.
+[28.06s -> 36.00s]  On board was a crew of seven, Colonel Rick Husband, Lieutenant Colonel Michael Anderson,
+[37.16s -> 45.44s]  Commander Laurel Clark, Captain David Brown, Commander William McCool, Dr. Kultna Shavla,
+[46.50s -> 51.10s]  and Ilan Ramon, a colonel in the Israeli Air Force.
+[52.12s -> 56.98s]  These men and women assumed great risk in the service to all humanity.
+[58.06s -> 61.70s]  In an age when space flight has come to seem almost routine,
+[61.70s -> 65.78s]  it is easy to overlook the dangers of travel by rocket
+[65.78s -> 70.84s]  and the difficulties of navigating the fierce outer atmosphere of the Earth.
+[72.08s -> 76.48s]  These astronauts knew the dangers, and they faced them willingly,
+[77.46s -> 80.86s]  knowing they had a high and noble purpose in life.
+[82.64s -> 86.16s]  Because of their courage and daring and idealism,
+[86.74s -> 88.04s]  we will miss them.
+[88.06s -> 90.06s]  And we will miss them all the more.
+[90.06s -> 96.06s]  All Americans today are thinking as well of the families of these men and women
+[96.06s -> 100.06s]  who have been given this sudden shock and grief.
+[100.06s -> 102.06s]  You're not alone.
+[102.06s -> 104.06s]  Our entire nation grieves with you.
+[104.06s -> 112.06s]  And those you loved will always have the respect and gratitude of this country.
+[112.06s -> 116.06s]  The cause in which they died will continue.
+[116.06s -> 118.06s]  Mankind is led into the darkness.
+[118.06s -> 120.06s]  Beyond our world.
+[120.06s -> 126.06s]  By the inspiration of discovery and the longing to understand.
+[126.06s -> 130.06s]  Our journey into space will go on.
+[130.06s -> 135.06s]  In the skies today, we saw destruction and tragedy.
+[135.06s -> 141.06s]  Yet farther than we can see, there is comfort and hope.
+[141.06s -> 144.06s]  In the words of the prophet Isaiah,
+[144.06s -> 147.06s]  Lift your eyes and look to the heavens.
+[147.06s -> 150.06s]  Who created all these?
+[150.06s -> 154.06s]  He who brings out the starry hosts one by one,
+[154.06s -> 158.06s]  and calls them each by name.
+[158.06s -> 162.06s]  Because of his great power and mighty strength,
+[162.06s -> 165.06s]  not one of them is missing.
+[165.06s -> 168.06s]  The same Creator who names the stars
+[168.06s -> 174.06s]  also knows the names of the seven souls we mourn today.
+[174.06s -> 176.06s]  The crew of the Shuttle Columbia,
+[176.06s -> 179.06s]  did not return safely to Earth.
+[179.06s -> 184.06s]  Yet we can pray that all are safely home.
+[184.06s -> 187.06s]  May God bless the grieving families.
+[187.06s -> 193.06s]  And may God continue to bless America.
+Detected language 'en' with probability 0.997257
+[0.00s -> 11.84s]  Henry F. Phillips, from Wikipedia, the free encyclopedia, at en.wikipedia.org
+[11.84s -> 26.14s]  Henry F. Phillips, 1890-1958
+[26.14s -> 38.16s]  A U.S. businessman from Portland, Oregon, has the honor of having the Phillips head screw and screwdriver named after him.
+[39.26s -> 52.14s]  The importance of the cross-head screw design lies in its self-centering property, useful on automated production lines that use powered screwdrivers.
+[53.76s -> 56.12s]  Phillips' major contribution was in...
+[56.14s -> 64.64s]  driving the cross-head concept forward, to the point where it was adopted by screwmakers and automobile companies.
+[65.58s -> 70.38s]  Although he received patents for the design in 1936,
+[70.38s -> 77.74s]  U.S. Patent No. 2,046,343
+[77.74s -> 84.10s]  U.S. Patents 2,046,837
+[84.10s -> 85.38s]  to 2,046,837
+[86.14s -> 95.44s]  to 2,464, Climate-T ceremonial
+[102.94s -> 108.54s]  It was so widely copied that by 1949, Phillips lost his patent.
+[108.54s -> 110.58s]  The American Screw Company was responsible for devising a means of manufacturing the screw and successfully patented and licensed their method.
+[110.58s -> 128.16s]  Other screwmakers of the 1930s dismissed the Phillips concept since it calls for a relatively complex, recessed socket shape in the head of the screw, as distinct from the simple milled slot of a slotted-type screw.
+[128.16s -> 145.28s]  The Phillips Screw Company and the American Screw Company went on to devise the posidrive screw, which differs from the Phillips in that it is designed to accommodate greater torque than the Phillips.
+[146.56s -> 152.92s]  An image accompanied this article, captioned, Phillips Screw Head.
+[154.74s -> 157.92s]  The following is an info box which accompanies.
+[158.16s -> 188.14s]  This article info box part of the series on screw drive types slotted commonly erroneously flathead Phillips crosshead posidrive superdrive Torx hex Allen Robertson.
+[188.16s -> 191.16s]  Tri-wing.
+[191.16s -> 194.16s]  Torx set.
+[194.16s -> 197.16s]  Spanner head.
+[197.16s -> 201.16s]  Triple square XZN.
+[201.16s -> 209.16s]  Others poly drive, spline drive, double hex.
+[209.16s -> 212.16s]  Many images accompanied this info box.
+[212.16s -> 216.16s]  This page was last modified on the 9th of April, 2001.
+[216.16s -> 217.16s]  This page was last modified on the 9th of April, 2001.
+[217.16s -> 218.16s]  This page was last modified on the 9th of April, 2001.
+[218.16s -> 219.16s]  This page was last modified on the 9th of April, 2001.
+[219.16s -> 220.16s]  This page was last modified on the 9th of April, 2001.
+[220.16s -> 221.16s]  This page was last modified on the 9th of April, 2001.
+[221.16s -> 222.16s]  This page was last modified on the 9th of April, 2001.
+[222.16s -> 223.16s]  This page was last modified on the 9th of April, 2001.
+[223.16s -> 224.16s]  This page was last modified on the 9th of April, 2001.
+[224.16s -> 225.16s]  This page was last modified on the 9th of April, 2001.
+[225.16s -> 226.16s]  This page was last modified on the 9th of April, 2001.
+[226.16s -> 227.16s]  This page was last modified on the 9th of April, 2001.
+[227.16s -> 228.16s]  This page was last modified on the 9th of April, 2001.
+[228.16s -> 229.16s]  This page was last modified on the 9th of April, 2001.
+[229.16s -> 230.16s]  This page was last modified on the 9th of April, 2001.
+[230.16s -> 231.16s]  This page was last modified on the 9th of April, 2001.
+[231.16s -> 241.04s]  details. Wikipedia is a registered trademark of the Wikimedia Foundation, Inc., a US-registered
+[241.04s -> 251.78s]  501c3 tax-deductible nonprofit charity. This sound file and all text in the article are
+[251.78s -> 265.86s]  licensed under the GNU Free Documentation License, available at www.gnu.org slash copyleft
+[265.86s -> 270.96s]  slash fdl dot html.
+Detected language 'en' with probability 0.991264
+[0.00s -> 3.06s]  This is the Micromachine Man presenting the most midget, miniature, motorcade of micromachines.
+[3.30s -> 5.18s]  Each one has dramatic details, terrific trims, precision paint jobs,
+[5.22s -> 6.60s]  plus incredible micromachine pocket play sets.
+[6.72s -> 8.64s]  There's a police station, fire station, restaurant, service station, and more.
+[8.82s -> 10.20s]  Perfect pocket portables to take any place.
+[10.34s -> 11.50s]  And there are many miniature play sets to play with,
+[11.52s -> 13.40s]  and each one comes with its own special edition micromachine vehicle
+[13.40s -> 15.10s]  and fun, fantastic features that miraculously move.
+[15.36s -> 16.50s]  Raise the boat lift at the airport marina.
+[16.58s -> 17.56s]  Man the gun turret at the army base.
+[17.62s -> 18.42s]  Clean your car at the car wash.
+[18.50s -> 19.10s]  Raise the toll bridge.
+[19.24s -> 21.08s]  And these play sets fit together to form a micromachine world.
+[21.34s -> 23.36s]  Micromachine pocket play sets, so tremendously tiny, so perfectly precise,
+[23.36s -> 25.16s]  so dazzlingly detailed, you'll want to pocket them all.
+[25.16s -> 27.58s]  Micromachines are micromachine pocket play sets sold separately from Galoob.
+[27.70s -> 29.38s]  The smaller they are, the better they are.
+
+Total Processing Time: 0 hours, 25 minutes, 53 seconds
