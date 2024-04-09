@@ -100,10 +100,9 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 ## 🌐🌏 Using the DockerFile for the FastAPI Endpoint:
 
-1. Build the Docker image inside the `dockerfile_endpoint` folder:
+1. Build the Docker image named `Dockerfile`:
 
 ```bash
-cd dockerfile_endpoint
 docker build -t dockerfile_endpoint .
 ```
 
