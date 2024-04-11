@@ -114,8 +114,6 @@ docker build -t dockerfile_endpoint .
 docker run -p 80:8000 dockerfile_endpoint
 ```
 
-<img src="./imgs/build_dockerfile_endpoint.png"/>
-
 This will start the FastAPI application, and you can access the endpoint at `http://localhost/docs#/default/transcribe_audio_transcribe_audio__post`.
 
 4. **Results**
