@@ -1,4 +1,4 @@
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import FileResponse
 from faster_whisper import WhisperModel
 import shutil
@@ -17,9 +17,19 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+ALLOWED_EXTENSIONS = {".wav"}
+
+
+def allowed_file(filename):
+    return os.path.splitext(filename)[1] in ALLOWED_EXTENSIONS
+
 
 @app.post("/transcribe_audio/")
 async def transcribe_audio(file: UploadFile = File(...)):
+    if not allowed_file(file.filename):
+        raise HTTPException(
+            status_code=400, detail="Only valid audio files with .wav extension are allowed.")
+
     # Create a temporary directory to store the uploaded audio file
     temp_dir = "temp"
     os.makedirs(temp_dir, exist_ok=True)
@@ -31,7 +41,7 @@ async def transcribe_audio(file: UploadFile = File(...)):
 
     start_time = time.time()
 
-    model_size = "large-v3"
+    model_size = "small"
 
     # Run on CPU with FP16
     model = WhisperModel(model_size, device="cpu", compute_type="int8")

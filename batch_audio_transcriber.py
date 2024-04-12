@@ -5,7 +5,7 @@ from tabulate import tabulate
 
 start_time = time.time()
 
-model_size = "large-v3"
+model_size = "small"
 
 # Run on GPU with FP16
 model = WhisperModel(model_size, device="cpu", compute_type="int8")
@@ -23,7 +23,8 @@ for audio_file in audio_files:
     file_start_time = time.time()
 
     # Transcribe audio
-    segments, info = model.transcribe(os.path.join(audio_folder, audio_file), beam_size=5)
+    segments, info = model.transcribe(
+        os.path.join(audio_folder, audio_file), beam_size=5)
 
     # Print language detection information
     print("Detected language '%s' with probability %f" %

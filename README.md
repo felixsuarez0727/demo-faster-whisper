@@ -1,6 +1,6 @@
 # 🤖 Whisper Transcription
 
-This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/faster-whisper) package, which is a reimplementation of OpenAI's Whisper model using CTranslate2, for transcribing audio files. [OpenAI's Whisper model](https://github.com/openai/whisper) is an advanced implementation of Automatic Speech Recognition (ASR). It employs modern deep learning techniques to accurately transcribe human speech into text. Whisper has been trained on a large amount of high-quality audio data, enabling it to recognize a wide range of dialects and accents. Its accuracy and speed make it ideal for real-time transcription applications, showcasing its potential to revolutionize speech recognition technology.
+This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/faster-whisper) package, which is a reimplementation of OpenAI's Whisper model using CTranslate2, for transcribing audio files with the `small` whisper model. [OpenAI's Whisper model](https://github.com/openai/whisper) is an advanced implementation of Automatic Speech Recognition (ASR). It employs modern deep learning techniques to accurately transcribe human speech into text. Whisper has been trained on a large amount of high-quality audio data, enabling it to recognize a wide range of dialects and accents. Its accuracy and speed make it ideal for real-time transcription applications, showcasing its potential to revolutionize speech recognition technology.
 
 ## 🛠️Prerequisites
 
@@ -122,21 +122,27 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 ## 🕵️ Audio File Testing on 4CPU/ 4GB GCP Instance
 
+1. Audio `gb0.wav`
+
+Processing Time: `1 minutes, 18 seconds`
+
+<img src="./imgs/audio_gb0_results.png"/>
+
 1. Audio `gb1.wav`
 
-Processing Time: `0 hours, 7 minutes, 4 seconds`
+Processing Time: `1 minutes, 37 seconds`
 
 <img src="./imgs/audio_gb1_results.png"/>
 
 2. Audio `hp0.wav`
 
-Processing Time: `0 hours, 9 minutes, 32 seconds`
+Processing Time: `1 minutes, 59 seconds`
 
 <img src="./imgs/audio_hp0_results.png"/>
 
 3. Audio `mm0.wav`
 
-Processing Time: `0 hours, 2 minutes, 47 seconds`
+Processing Time: `31 seconds`
 
 <img src="./imgs/audio_mm0_results.png"/>
 
@@ -144,12 +150,38 @@ Processing Time: `0 hours, 2 minutes, 47 seconds`
 
 | Audio File | Hours | Minutes | Seconds |
 | ---------- | ----- | ------- | ------- |
-| gb1.wav    | 0     | 7       | 4       |
-| hp0.wav    | 0     | 9       | 32      |
-| mm0.wav    | 0     | 2       | 47      |
+| gb0.wav    | 0     | 1       | 18      |
+| gb1.wav    | 0     | 1       | 37      |
+| hp0.wav    | 0     | 1       | 59      |
+| mm0.wav    | 0     | 0       | 31      |
+
+**Total Processing Time: 5 minutes, 25 seconds**
+
+## 🕵️ Using the Fast API Endpoint on 4CPU/ 4GB GCP Instance
+
+```bash
+uvicorn transcription_endpoint:app --reload --host 0.0.0.0
+```
+
+<img src="./imgs/gcp_instance_endpoint.png"/>
+
+This will start the FastAPI application, and you can access the endpoint at `http://35.184.255.131:8000/docs#/default/transcribe_audio_transcribe_audio__post`.
+
+<img src="./imgs/gcp_instance_endpoint_results.png"/>
 
 ## 🕵️ Audio File Testing on 6CPU cores/ 16GB Local Machine
 
 1. All audios:
+
+**_Comparative table_**
+
+| Audio File | Hours | Minutes | Seconds |
+| ---------- | ----- | ------- | ------- |
+| gb0.wav    | 0     | 0       | 27      |
+| gb1.wav    | 0     | 0       | 30      |
+| hp0.wav    | 0     | 0       | 41      |
+| mm0.wav    | 0     | 0       | 9       |
+
+**Total Processing Time: 1 minutes, 54 seconds**
 
 <img src="./imgs/local_test_results.png"/>

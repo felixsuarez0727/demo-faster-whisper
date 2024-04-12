@@ -3,7 +3,7 @@ import time
 
 start_time = time.time()
 
-model_size = "large-v3"
+model_size = "small"
 
 # Run on GPU with FP16
 model = WhisperModel(model_size, device="cpu", compute_type="int8")
