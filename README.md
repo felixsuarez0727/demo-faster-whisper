@@ -5,15 +5,10 @@ This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/fast
 ## Index
 
 1. <div align=left><a href="#prerequisites" style="padding-top: 50px;">🛠️ Prerequisites</a></div>
-2. <div align=left><a href="#python-script-usage" style="padding-top: 50px;">🚀 Using Python Script</a></div>
-3. <div align=left><a href="#using-docker" style="padding-top: 50px;">🐳 Using DockerFile for the script</a></div>
-4. <div align=left><a href="#additional-notes" style="padding-top: 50px;">ℹ️ Additional Notes</a></div>
-5. <div align=left><a href="#fast-api-endpoint" style="padding-top: 50px;">🧑🏻‍💻 Using the Fast API Endpoint</a></div>
-6. <div align=left><a href="#docker-and-fastapi-endpoint" style="padding-top: 50px;">🌐 Using the DockerFile for the FastAPI Endpoint</a></div>
-7. <div align=left><a href="#audio-file-testing-on-gcp" style="padding-top: 50px;">🕵️ Audio File Testing on 4CPU/ 4GB GCP Instance</a></div>
-8. <div align=left><a href="#using-fast-api-gcp" style="padding-top: 50px;">🕵️ Using the Fast API Endpoint on 4CPU/ 4GB GCP Instance</a></div>
-9. <div align=left><a href="#using-docker-gcp" style="padding-top: 50px;">🐳 Using the DockerFile Endpoint on 4CPU/ 4GB GCP Instance</a></div>
-10. <div align=left><a href="#audio-file-testing-on-local" style="padding-top: 50px;">🕵️ Audio File Testing on 6CPU cores/ 16GB Local Machine</a></div>
+2. <div align=left><a href="#transcription-through-script" style="padding-top: 50px;">🚀 Transcription through Script</a></div>
+3. <div align=left><a href="#additional-notes" style="padding-top: 50px;">ℹ️ Additional Notes</a></div>
+4. <div align=left><a href="#transcription-through-api" style="padding-top: 50px;">🧑🏻‍💻 Transcription through API</a></div>
+5. <div align=left><a href="#testing" style="padding-top: 50px;">🕵️ Testing</a></div>
 
 <a name="prerequisites"></a>
 
@@ -24,11 +19,13 @@ This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/fast
 - Python 3.8 or higher
 - Docker (optional)
 
-<a name="python-script-usage"></a>
+<a name="#transcription-through-script"></a>
 
 </br>
 
 ## 🚀Using Python Script
+
+In this experiment, we examined the performance of audio file processing using the Whisper model `small`.
 
 1. **Set Up a Virtual Environment:**
 
@@ -53,11 +50,9 @@ This will transcribe the audio file specified, print on console and save the res
 
 <img src="./imgs/transcription_result.png"/>
 
-<a name="using-docker"></a>
-
-</br>
-
 ## 🐳 Using DockerFile for the script
+
+In this experiment, we examined the performance of audio file processing using the Whisper model `small`.
 
 1. **Build the Docker image inside the `dockerfile_script` folder:**
 
@@ -100,11 +95,13 @@ This will execute the Python script inside the Docker container, transcribe the 
 - Ensure that the audio file path specified in the script is correct and accessible.
 - The Docker image can be used to run the transcription in an isolated environment without worrying about dependencies.
 
-<a name="fast-api-endpoint"></a>
+<a name="transcription-through-api"></a>
 
 </br>
 
 ## 🧑🏻‍💻 Using the Fast API Endpoint
+
+In this experiment, we examined the performance of audio file processing using the Whisper model `small`.
 
 1. **Set Up a Virtual Environment:**
 
@@ -131,11 +128,9 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 <img src="./imgs/endpoint_results.png"/>
 
-<a name="docker-and-fastapi-endpoint"></a>
-
-</br>
-
 ## 🌐 Using the DockerFile for the FastAPI Endpoint
+
+In this experiment, we examined the performance of audio file processing using the Whisper model `small`.
 
 1. **Build the Docker image named `Dockerfile`:**
 
@@ -157,11 +152,13 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 <img src="./imgs/docker_endpoint_results.png"/>
 
-<a name="audio-file-testing-on-gcp"></a>
+<a name="testing"></a>
 
 </br>
 
 ## 🕵️ Audio File Testing on 4CPU/ 4GB GCP Instance
+
+In this experiment, we examined the performance of audio file processing using the Whisper model `small`.
 
 1. **Audio `gb0.wav`:**
 
@@ -198,11 +195,9 @@ Processing Time: `31 seconds`
 
 **Total Processing Time: 5 minutes, 25 seconds**
 
-<a name="using-fast-api-gcp"></a>
-
-</br>
-
 ## 🕵️ Using the Fast API Endpoint on 4CPU/ 4GB GCP Instance
+
+In this experiment, we examined the performance of audio file processing using the Whisper model `small`.
 
 ```bash
 uvicorn transcription_endpoint:app --reload --host 0.0.0.0
@@ -214,11 +209,9 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 <img src="./imgs/gcp_instance_endpoint_results.png"/>
 
-<a name="using-docker-gcp"></a>
-
-</br>
-
 ## 🐳 Using the DockerFile Endpoint on 4CPU/ 4GB GCP Instance
+
+In this experiment, we examined the performance of audio file processing using the Whisper model `small`.
 
 ```bash
 cd dockerfile_endpoint
@@ -232,11 +225,9 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 <img src="./imgs/docker_gcp_instance_endpoint_results.png"/>
 
-<a name="audio-file-testing-on-local"></a>
-
-</br>
-
 ## 🕵️ Audio File Testing on 6CPU cores/ 16GB Local Machine
+
+In this experiment, we examined the performance of audio file processing using the Whisper model `small`.
 
 1. **All audios:**
 
