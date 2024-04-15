@@ -4,16 +4,16 @@ This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/fast
 
 ## Index
 
-- <div align=center><a href="#prerequisites">🛠️ Prerequisites</a> | </div>
-- <div align=center><a href="#python-script-usage">🚀 Python Script Usage</a> | </div>
-- <div align=center><a href="#using-docker">🐳 Using Docker</a> | </div>
-- <div align=center><a href="#additional-notes">ℹ️ Additional Notes</a> | </div>
-- <div align=center><a href="#fast-api-endpoint">🧑🏻‍💻 Fast API Endpoint</a> | </div>
-- <div align=center><a href="#docker-and-fastapi-endpoint">🌐🌏 Docker and the FastAPI Endpoint</a> | </div>
-- <div align=center><a href="#audio-file-testing-on-gcp">🕵️ Audio File Testing on GCP Instance</a> | </div>
-- <div align=center><a href="#using-fast-api-gcp">🕵️ Using the Fast API Endpoint on GCP Instance</a> | </div>
-- <div align=center><a href="#using-docker-gcp">🐳 Using the Docker Endpoint on GCP Instance</a> | </div>
-- <div align=center><a href="#audio-file-testing-on-local">🕵️ Audio File Testing on Local Machine</a> </div>
+1. <div align=left><a href="#prerequisites">🛠️ Prerequisites</a></div>
+2. <div align=left><a href="#python-script-usage">🚀 Python Script Usage</a></div>
+3. <div align=left><a href="#using-docker">🐳 Using Docker</a></div>
+4. <div align=left><a href="#additional-notes">ℹ️ Additional Notes</a></div>
+5. <div align=left><a href="#fast-api-endpoint">🧑🏻‍💻 Fast API Endpoint</a></div>
+6. <div align=left><a href="#docker-and-fastapi-endpoint">🌐🌏 Docker and the FastAPI Endpoint</a></div>
+7. <div align=left><a href="#audio-file-testing-on-gcp">🕵️ Audio File Testing on GCP Instance</a></div>
+8. <div align=left><a href="#using-fast-api-gcp">🕵️ Using the Fast API Endpoint on GCP Instance</a></div>
+9. <div align=left><a href="#using-docker-gcp">🐳 Using the Docker Endpoint on GCP Instance</a></div>
+10. <div align=left><a href="#audio-file-testing-on-local">🕵️ Audio File Testing on Local Machine</a></div>
 
 ## 🛠️ Prerequisites <a name="prerequisites"></a>
 
