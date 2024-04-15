@@ -15,16 +15,16 @@ This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/fast
 9. <div align=left><a href="#using-docker-gcp">🐳 Using the Docker Endpoint on GCP Instance</a></div>
 10. <div align=left><a href="#audio-file-testing-on-local">🕵️ Audio File Testing on Local Machine</a></div>
 
-## 🛠️ Prerequisites <a name="prerequisites"></a>
-
 </br>
+
+## 🛠️ Prerequisites <a name="prerequisites"></a>
 
 - Python 3.8 or higher
 - Docker (optional)
 
-## 🚀Using Python Script <a name="python-script-usage"></a>
-
 </br>
+
+## 🚀Using Python Script <a name="python-script-usage"></a>
 
 1. **Set Up a Virtual Environment:**
 
@@ -49,9 +49,9 @@ This will transcribe the audio file specified, print on console and save the res
 
 <img src="./imgs/transcription_result.png"/>
 
-## 🐳 Using DockerFile for the script <a name="using-docker"></a>
-
 </br>
+
+## 🐳 Using DockerFile for the script <a name="using-docker"></a>
 
 1. Build the Docker image inside the `dockerfile_script` folder:
 
