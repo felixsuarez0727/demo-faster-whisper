@@ -5,6 +5,7 @@ import shutil
 import os
 import time
 from fastapi.middleware.cors import CORSMiddleware
+import asyncio
 
 app = FastAPI()
 
@@ -19,16 +20,48 @@ app.add_middleware(
 
 ALLOWED_EXTENSIONS = {".wav"}
 
+# Global variable to track the health status
+HEALTH_STATUS = "OK"
+
 
 def allowed_file(filename):
     return os.path.splitext(filename)[1] in ALLOWED_EXTENSIONS
 
-# Nuevo endpoint de healthcheck
 
-
-@app.get("/healthcheck", tags=["healthcheck"])
+# Health check endpoint
+@app.get("/v1/healthcheck", tags=["v1"], operation_id="healthcheck")
 async def healthcheck():
-    return {"status": "OK"}
+    global HEALTH_STATUS
+
+    # Check if the application is healthy
+    if HEALTH_STATUS != "OK":
+        raise HTTPException(
+            status_code=500, detail="The application is not in a healthy state"
+        )
+
+    # Perform any additional health checks if needed
+    # For example, you can check database connectivity, external service availability, etc.
+
+    # Return the current health status
+    return {"status": HEALTH_STATUS}
+
+
+# Function to periodically check the health of the endpoint
+async def check_health():
+    global HEALTH_STATUS
+    while True:
+        # Implement your health check logic here
+        # For example, check database connectivity, external service availability, etc.
+        await asyncio.sleep(60)  # Check health every 60 seconds
+
+# Startup event to start the health check loop
+
+
+async def startup_event():
+    asyncio.create_task(check_health())
+
+# Register the startup event
+app.add_event_handler("startup", startup_event)
 
 
 @app.post("/v1/transcribe_audio", tags=["v1"], operation_id="transcribe_audio")
