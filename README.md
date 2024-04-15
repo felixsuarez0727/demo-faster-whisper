@@ -87,14 +87,14 @@ This will execute the Python script inside the Docker container, transcribe the 
 
 </br>
 
-## ℹ️ Additional Notes
+## ℹ️ Additional Notes <a name="additional-notes"></a>
 
 - Ensure that the audio file path specified in the script is correct and accessible.
 - The Docker image can be used to run the transcription in an isolated environment without worrying about dependencies.
 
 </br>
 
-## 🧑🏻‍💻 Using the Fast API Endpoint
+## 🧑🏻‍💻 Using the Fast API Endpoint <a name="fast-api-endpoint"></a>
 
 1. Set Up a Virtual Environment:
 
@@ -123,9 +123,9 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 </br>
 
-## 🌐🌏 Using the DockerFile for the FastAPI Endpoint:
+## 🌐🌏 Using the DockerFile for the FastAPI Endpoint <a name="docker-and-fastapi-endpoint"></a>
 
-1. Build the Docker image named `Dockerfile`:
+11. Build the Docker image named `Dockerfile`:
 
 ```bash
 docker build -t dockerfile_endpoint .
@@ -147,7 +147,7 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 </br>
 
-## 🕵️ Audio File Testing on 4CPU/ 4GB GCP Instance
+## 🕵️ Audio File Testing on 4CPU/ 4GB GCP Instance <a name="audio-file-testing-on-gcp"></a>
 
 1. Audio `gb0.wav`
 
@@ -186,7 +186,7 @@ Processing Time: `31 seconds`
 
 </br>
 
-## 🕵️ Using the Fast API Endpoint on 4CPU/ 4GB GCP Instance
+## 🕵️ Using the Fast API Endpoint on 4CPU/ 4GB GCP Instance <a name="using-fast-api-gcp"></a>
 
 </br>
 
@@ -200,9 +200,9 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 <img src="./imgs/gcp_instance_endpoint_results.png"/>
 
-## 🐳 Using the DockerFile Endpoint on 4CPU/ 4GB GCP Instance
-
 </br>
+
+## 🐳 Using the DockerFile Endpoint on 4CPU/ 4GB GCP Instance <a name="using-docker-gcp"></a>
 
 ```bash
 cd dockerfile_endpoint
@@ -216,9 +216,9 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 <img src="./imgs/docker_gcp_instance_endpoint_results.png"/>
 
-## 🕵️ Audio File Testing on 6CPU cores/ 16GB Local Machine
-
 </br>
+
+## 🕵️ Audio File Testing on 6CPU cores/ 16GB Local Machine <a name="audio-file-testing-on-local"></a>
 
 1. All audios:
 
