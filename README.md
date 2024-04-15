@@ -85,12 +85,14 @@ This will execute the Python script inside the Docker container, transcribe the 
 
 <img src="./imgs/docker_transcription_result.png"/>
 
-## ℹ️ Additional Notes
-
 </br>
+
+## ℹ️ Additional Notes
 
 - Ensure that the audio file path specified in the script is correct and accessible.
 - The Docker image can be used to run the transcription in an isolated environment without worrying about dependencies.
+
+</br>
 
 ## 🧑🏻‍💻 Using the Fast API Endpoint
 
@@ -119,9 +121,9 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 <img src="./imgs/endpoint_results.png"/>
 
-## 🌐🌏 Using the DockerFile for the FastAPI Endpoint:
-
 </br>
+
+## 🌐🌏 Using the DockerFile for the FastAPI Endpoint:
 
 1. Build the Docker image named `Dockerfile`:
 
@@ -143,9 +145,9 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 <img src="./imgs/docker_endpoint_results.png"/>
 
-## 🕵️ Audio File Testing on 4CPU/ 4GB GCP Instance
-
 </br>
+
+## 🕵️ Audio File Testing on 4CPU/ 4GB GCP Instance
 
 1. Audio `gb0.wav`
 
@@ -181,6 +183,8 @@ Processing Time: `31 seconds`
 | mm0.wav    | 0     | 0       | 31      |
 
 **Total Processing Time: 5 minutes, 25 seconds**
+
+</br>
 
 ## 🕵️ Using the Fast API Endpoint on 4CPU/ 4GB GCP Instance
 
