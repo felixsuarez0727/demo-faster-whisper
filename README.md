@@ -17,10 +17,14 @@ This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/fast
 
 ## 🛠️Prerequisites
 
+</br>
+
 - Python 3.8 or higher
 - Docker (optional)
 
 ## 🚀 Using Python Script
+
+</br>
 
 1. **Set Up a Virtual Environment:**
 
@@ -83,6 +87,8 @@ This will execute the Python script inside the Docker container, transcribe the 
 
 ## ℹ️ Additional Notes
 
+</br>
+
 - Ensure that the audio file path specified in the script is correct and accessible.
 - The Docker image can be used to run the transcription in an isolated environment without worrying about dependencies.
 
@@ -115,6 +121,8 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 ## 🌐🌏 Using the DockerFile for the FastAPI Endpoint:
 
+</br>
+
 1. Build the Docker image named `Dockerfile`:
 
 ```bash
@@ -136,6 +144,8 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 <img src="./imgs/docker_endpoint_results.png"/>
 
 ## 🕵️ Audio File Testing on 4CPU/ 4GB GCP Instance
+
+</br>
 
 1. Audio `gb0.wav`
 
@@ -174,6 +184,8 @@ Processing Time: `31 seconds`
 
 ## 🕵️ Using the Fast API Endpoint on 4CPU/ 4GB GCP Instance
 
+</br>
+
 ```bash
 uvicorn transcription_endpoint:app --reload --host 0.0.0.0
 ```
@@ -185,6 +197,8 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 <img src="./imgs/gcp_instance_endpoint_results.png"/>
 
 ## 🐳 Using the DockerFile Endpoint on 4CPU/ 4GB GCP Instance
+
+</br>
 
 ```bash
 cd dockerfile_endpoint
@@ -199,6 +213,8 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 <img src="./imgs/docker_gcp_instance_endpoint_results.png"/>
 
 ## 🕵️ Audio File Testing on 6CPU cores/ 16GB Local Machine
+
+</br>
 
 1. All audios:
 
