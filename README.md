@@ -4,15 +4,15 @@ This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/fast
 
 ## Index
 
-1. <div align=left><a href="#prerequisites">🛠️ Prerequisites</a></div>
-2. <div align=left><a href="#python-script-usage">🚀 Python Script Usage</a></div>
-3. <div align=left><a href="#using-docker">🐳 Using Docker</a></div>
-4. <div align=left><a href="#additional-notes">ℹ️ Additional Notes</a></div>
-5. <div align=left><a href="#fast-api-endpoint">🧑🏻‍💻 Fast API Endpoint</a></div>
-6. <div align=left><a href="#docker-and-fastapi-endpoint">🌐🌏 Docker and the FastAPI Endpoint</a></div>
-7. <div align=left><a href="#audio-file-testing-on-gcp">🕵️ Audio File Testing on GCP Instance</a></div>
-8. <div align=left><a href="#using-fast-api-gcp">🕵️ Using the Fast API Endpoint on GCP Instance</a></div>
-9. <div align=left><a href="#using-docker-gcp">🐳 Using the Docker Endpoint on GCP Instance</a></div>
+1. <div align=left><a href="#prerequisites" style="padding-top: 50px;">🛠️ Prerequisites</a></div>
+2. <div align=left><a href="#python-script-usage" style="padding-top: 50px;">🚀 Python Script Usage</a></div>
+3. <div align=left><a href="#using-docker" style="padding-top: 50px;">🐳 Using Docker</a></div>
+4. <div align=left><a href="#additional-notes" style="padding-top: 50px;">ℹ️ Additional Notes</a></div>
+5. <div align=left><a href="#fast-api-endpoint" style="padding-top: 50px;">🧑🏻‍💻 Fast API Endpoint</a></div>
+6. <div align=left><a href="#docker-and-fastapi-endpoint" style="padding-top: 50px;">🌐🌏 Docker and the FastAPI Endpoint</a></div>
+7. <div align=left><a href="#audio-file-testing-on-gcp" style="padding-top: 50px;">🕵️ Audio File Testing on GCP Instance</a></div>
+8. <div align=left><a href="#using-fast-api-gcp" style="padding-top: 50px;">🕵️ Using the Fast API Endpoint on GCP Instance</a></div>
+9. <div align=left><a href="#using-docker-gcp" style="padding-top: 50px;">🐳 Using the Docker Endpoint on GCP Instance</a></div>
 10. <div align=left><a href="#audio-file-testing-on-local" style="padding-top: 50px;">🕵️ Audio File Testing on Local Machine</a></div>
 
 </br>
