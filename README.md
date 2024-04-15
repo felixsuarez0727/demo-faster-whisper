@@ -2,6 +2,19 @@
 
 This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/faster-whisper) package, which is a reimplementation of OpenAI's Whisper model using CTranslate2, for transcribing audio files with the `small` whisper model. [OpenAI's Whisper model](https://github.com/openai/whisper) is an advanced implementation of Automatic Speech Recognition (ASR). It employs modern deep learning techniques to accurately transcribe human speech into text. Whisper has been trained on a large amount of high-quality audio data, enabling it to recognize a wide range of dialects and accents. Its accuracy and speed make it ideal for real-time transcription applications, showcasing its potential to revolutionize speech recognition technology.
 
+## Index
+
+1. [🛠️ Prerequisites](#️️️️️️️-prerequisites)
+2. [🚀 Python Script Usage](#-using-python-script)
+3. [🐳 Using Docker ](#-using-dockerfile-for-the-script)
+4. [ℹ️ Additional Notes](#️-additional-notes)
+5. [🧑🏻‍💻 Fast API Endpoint](#️-using-the-fast-api-endpoint)
+6. [🌐🌏 Docker and the FastAPI Endpoint](#️-using-the-dockerfile-for-the-fastapi-endpoint)
+7. [🕵️ Audio File Testing on GCP Instance](#️-audio-file-testing-on-4cpu-4gb-gcp-instance)
+8. [🕵️ Using the Fast API Endpoint on GCP Instance](#️-using-the-fast-api-endpoint-on-4cpu-4gb-gcp-instance)
+9. [🐳 Using the Docker Endpoint on GCP Instance](#️-using-the-dockerfile-endpoint-on-4cpu-4gb-gcp-instance)
+10. [🕵️ Audio File Testing on Local Machine](#️-audio-file-testing-on-6cpu-cores-16gb-local-machine)
+
 ## 🛠️Prerequisites
 
 - Python 3.8 or higher
