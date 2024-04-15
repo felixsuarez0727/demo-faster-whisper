@@ -47,6 +47,8 @@ This will transcribe the audio file specified, print on console and save the res
 
 ## 🐳 Using DockerFile for the script
 
+</br>
+
 1. Build the Docker image inside the `dockerfile_script` folder:
 
 ```bash
