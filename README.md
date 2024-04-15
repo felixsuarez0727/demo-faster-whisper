@@ -198,11 +198,11 @@ Processing Time: `31 seconds`
 
 **Total Processing Time: 5 minutes, 25 seconds**
 
-</br>
-
-## 🕵️ Using the Fast API Endpoint on 4CPU/ 4GB GCP Instance <a name="using-fast-api-gcp"></a>
+<a name="using-fast-api-gcp"></a>
 
 </br>
+
+## 🕵️ Using the Fast API Endpoint on 4CPU/ 4GB GCP Instance
 
 ```bash
 uvicorn transcription_endpoint:app --reload --host 0.0.0.0
