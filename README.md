@@ -165,9 +165,22 @@ uvicorn transcription_endpoint:app --reload --host 0.0.0.0
 
 <img src="./imgs/gcp_instance_endpoint.png"/>
 
-This will start the FastAPI application, and you can access the endpoint at `http://35.184.255.131:8000/docs#/default/transcribe_audio_transcribe_audio__post`.
+This will start the FastAPI application, and you can access the endpoint at `http://[External_IP]:8000/docs#/default/transcribe_audio_transcribe_audio__post`.
 
 <img src="./imgs/gcp_instance_endpoint_results.png"/>
+
+## 🐳 Using the DockerFile Endpoint on 4CPU/ 4GB GCP Instance
+
+```bash
+docker build -t dockerfile_endpoint .
+docker run -p 8000:8000 dockerfile_endpointnt
+```
+
+<img src="./imgs/docker_gcp_instance_endpoint.png"/>
+
+This will start the FastAPI application, and you can access the endpoint at `http://External_IP]:8000/docs#/default/transcribe_audio_transcribe_audio__post`.
+
+<img src="./imgs/docker_gcp_instance_endpoint_results.png"/>
 
 ## 🕵️ Audio File Testing on 6CPU cores/ 16GB Local Machine
 
