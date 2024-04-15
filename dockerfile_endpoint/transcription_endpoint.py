@@ -24,7 +24,7 @@ def allowed_file(filename):
     return os.path.splitext(filename)[1] in ALLOWED_EXTENSIONS
 
 
-@app.post("/transcribe_audio/")
+@app.post("/v1/transcribe_audio/", tags=["v1"], operation_id="transcribe_audio")
 async def transcribe_audio(file: UploadFile = File(...)):
     if not allowed_file(file.filename):
         raise HTTPException(

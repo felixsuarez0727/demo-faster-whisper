@@ -92,7 +92,7 @@ pip install -r requirements.txt
 uvicorn transcription_endpoint:app --reload
 ```
 
-This will start the FastAPI application, and you can access the endpoint at `http://127.0.0.1:8000/docs#/default/transcribe_audio_transcribe_audio__post`.
+This will start the FastAPI application, and you can access the endpoint at `http://127.0.0.1:8000/docs#/v1/transcribe_audio`.
 
 4. **Results**
 
@@ -114,7 +114,7 @@ docker build -t dockerfile_endpoint .
 docker run -p 80:8000 dockerfile_endpoint
 ```
 
-This will start the FastAPI application, and you can access the endpoint at `http://localhost/docs#/default/transcribe_audio_transcribe_audio__post`.
+This will start the FastAPI application, and you can access the endpoint at `http://localhost/docs#/v1/transcribe_audio`.
 
 4. **Results**
 
@@ -165,7 +165,7 @@ uvicorn transcription_endpoint:app --reload --host 0.0.0.0
 
 <img src="./imgs/gcp_instance_endpoint.png"/>
 
-This will start the FastAPI application, and you can access the endpoint at `http://[External_IP]:8000/docs#/default/transcribe_audio_transcribe_audio__post`.
+This will start the FastAPI application, and you can access the endpoint at `http://[External_IP]:8000/docs#/v1/transcribe_audio`.
 
 <img src="./imgs/gcp_instance_endpoint_results.png"/>
 
@@ -173,12 +173,12 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 
 ```bash
 docker build -t dockerfile_endpoint .
-docker run -p 8000:8000 dockerfile_endpointnt
+docker run -p 8000:8000 dockerfile_endpoint
 ```
 
 <img src="./imgs/docker_gcp_instance_endpoint.png"/>
 
-This will start the FastAPI application, and you can access the endpoint at `http://[External_IP]:8000/docs#/default/transcribe_audio_transcribe_audio__post`.
+This will start the FastAPI application, and you can access the endpoint at `http://[External_IP]:8000/docs#/v1/transcribe_audio`.
 
 <img src="./imgs/docker_gcp_instance_endpoint_results.png"/>
 
