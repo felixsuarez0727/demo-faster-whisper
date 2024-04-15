@@ -172,6 +172,7 @@ This will start the FastAPI application, and you can access the endpoint at `htt
 ## 🐳 Using the DockerFile Endpoint on 4CPU/ 4GB GCP Instance
 
 ```bash
+cd dockerfile_endpoint
 docker build -t dockerfile_endpoint .
 docker run -p 8000:8000 dockerfile_endpoint
 ```
