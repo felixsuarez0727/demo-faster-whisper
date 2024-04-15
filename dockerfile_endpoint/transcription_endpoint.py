@@ -23,6 +23,13 @@ ALLOWED_EXTENSIONS = {".wav"}
 def allowed_file(filename):
     return os.path.splitext(filename)[1] in ALLOWED_EXTENSIONS
 
+# Nuevo endpoint de healthcheck
+
+
+@app.get("/healthcheck", tags=["healthcheck"])
+async def healthcheck():
+    return {"status": "OK"}
+
 
 @app.post("/v1/transcribe_audio", tags=["v1"], operation_id="transcribe_audio")
 async def transcribe_audio(file: UploadFile = File(...)):

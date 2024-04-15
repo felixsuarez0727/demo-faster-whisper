@@ -13,7 +13,7 @@ This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/fast
 7. <div align=left><a href="#audio-file-testing-on-gcp">🕵️ Audio File Testing on GCP Instance</a></div>
 8. <div align=left><a href="#using-fast-api-gcp">🕵️ Using the Fast API Endpoint on GCP Instance</a></div>
 9. <div align=left><a href="#using-docker-gcp">🐳 Using the Docker Endpoint on GCP Instance</a></div>
-10. <div align=left><a href="#audio-file-testing-on-local">🕵️ Audio File Testing on Local Machine</a></div>
+10. <div align=left><a href="#audio-file-testing-on-local" style="padding-top: 50px;">🕵️ Audio File Testing on Local Machine</a></div>
 
 </br>
 
