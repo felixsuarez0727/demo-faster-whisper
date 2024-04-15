@@ -4,25 +4,27 @@ This Python script utilizes the [faster-whisper](https://github.com/SYSTRAN/fast
 
 ## Index
 
-1. [🛠️ Prerequisites](#️️️️️️️-prerequisites)
-2. [🚀 Python Script Usage](#-using-python-script)
-3. [🐳 Using Docker ](#-using-dockerfile-for-the-script)
-4. [ℹ️ Additional Notes](#️-additional-notes)
-5. [🧑🏻‍💻 Fast API Endpoint](#️-using-the-fast-api-endpoint)
-6. [🌐🌏 Docker and the FastAPI Endpoint](#️-using-the-dockerfile-for-the-fastapi-endpoint)
-7. [🕵️ Audio File Testing on GCP Instance](#️-audio-file-testing-on-4cpu-4gb-gcp-instance)
-8. [🕵️ Using the Fast API Endpoint on GCP Instance](#️-using-the-fast-api-endpoint-on-4cpu-4gb-gcp-instance)
-9. [🐳 Using the Docker Endpoint on GCP Instance](#️-using-the-dockerfile-endpoint-on-4cpu-4gb-gcp-instance)
-10. [🕵️ Audio File Testing on Local Machine](#️-audio-file-testing-on-6cpu-cores-16gb-local-machine)
+<div align=center>
+  <a href="#prerequisites">🛠️ Prerequisites</a> | 
+  <a href="#python-script-usage">🚀 Python Script Usage</a> | 
+  <a href="#using-docker">🐳 Using Docker</a> | 
+  <a href="#additional-notes">ℹ️ Additional Notes</a> | 
+  <a href="#fast-api-endpoint">🧑🏻‍💻 Fast API Endpoint</a> | 
+  <a href="#docker-and-fastapi-endpoint">🌐🌏 Docker and the FastAPI Endpoint</a> | 
+  <a href="#audio-file-testing-on-gcp">🕵️ Audio File Testing on GCP Instance</a> | 
+  <a href="#using-fast-api-gcp">🕵️ Using the Fast API Endpoint on GCP Instance</a> | 
+  <a href="#using-docker-gcp">🐳 Using the Docker Endpoint on GCP Instance</a> | 
+  <a href="#audio-file-testing-on-local">🕵️ Audio File Testing on Local Machine</a>
+</div>
 
-## 🛠️Prerequisites
+## 🛠️ Prerequisites <a name="prerequisites"></a>
 
 </br>
 
 - Python 3.8 or higher
 - Docker (optional)
 
-## 🚀 Using Python Script
+## 🚀Using Python Script <a name="python-script-usage"></a>
 
 </br>
 
@@ -49,7 +51,7 @@ This will transcribe the audio file specified, print on console and save the res
 
 <img src="./imgs/transcription_result.png"/>
 
-## 🐳 Using DockerFile for the script
+## 🐳 Using DockerFile for the script <a name="using-docker"></a>
 
 </br>
 

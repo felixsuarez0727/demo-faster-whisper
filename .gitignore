@@ -6,3 +6,6 @@ __pycache__/
 
 # Ignore Python cache folders inside other folders
 **/__pycache__/
+
+# Ignore Python temp folder
+dockerfile_endpoint/temp/
