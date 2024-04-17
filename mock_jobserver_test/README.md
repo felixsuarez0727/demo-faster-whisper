@@ -1,6 +1,6 @@
 # 💻 Mock Job Server Test
 
-The `mock_jobserver_test` project is a client-server simulation designed for audio transcription. Clients initialize by sending an ID to the `mock_server.py` via a `GET request`. After initialization, clients receive a `JSON response` containing data to be processed. This includes an audio file for transcription, which is performed using OpenAI's `small` Whisper model. Transcribed results are then submitted back to the server via a `POST request`.
+The `mock_jobserver_test` project is a client-server simulation designed for audio transcription. Clients initialize by sending an ID in the `mock_server.py` server via a `GET request`. After initialization, clients receive a `JSON response` containing data to be processed. This includes an audio file for transcription, which is performed using OpenAI's `small` Whisper model. Transcribed results are then submitted back to the server via a `POST request`.
 
 ## Index
 
@@ -25,7 +25,7 @@ The `mock_jobserver_test` project is a client-server simulation designed for aud
 
 ### `main.py`
 
-This Python script serves as the core logic for client-side operations. It communication with the server, initializing the process by sending an `ID`. Upon receiving a `JSON response`, the script conducts transcription based on the provided data. Subsequently, it prepares a `JSON payload` containing the results to be sent back to the server.
+This Python script serves as the core logic for client-side operations. It communicates with the server, initializing the process by sending an `ID`. Upon receiving a `JSON response`, the script conducts transcription based on the provided data. Subsequently, it prepares a `JSON payload` containing the results to be sent back to the server.
 
 ```json
 {
@@ -42,7 +42,7 @@ This script provides a function to transcribe audio files using the predefined `
 
 ### `mock_server.py`
 
-This server-side script, developed using `Flask`, simulates a server environment for audio transcription tasks. Below is a brief overview of its functionalities:
+This server-side script, developed using the `Flask` framework, simulates a server environment for audio transcription tasks. Below is a brief overview of its functionalities:
 
 ### Endpoints
 
@@ -67,7 +67,7 @@ This server-side script, developed using `Flask`, simulates a server environment
 
 ### `requirements.txt`
 
-A file containing the required `Python packages` and their versions for running the project.
+A file containing required `Python packages` and their versions for running the project.
 
 <a name="usage"></a>
 
