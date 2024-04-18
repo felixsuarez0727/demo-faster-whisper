@@ -92,7 +92,7 @@ def post_job(requested_job_id):
 
             print("\033[92mReceived data:\033[0m")
             print("\033[92mJob ID:\033[0m", new_job_id)
-            print("\033[92mData:\033[0m", new_data)
+            # print("\033[92mData:\033[0m", new_data)
             print("\033[92mOutput:\033[0m", new_output)
             print("\033[92mEnd:\033[0m", new_end)
 

@@ -1,6 +1,6 @@
 # 💻 Mock Job Server Test
 
-The `mock_jobserver_test` project is a client-server simulation designed for audio transcription. Clients initialize by sending an ID in the `mock_server.py` server via a `GET request`. After initialization, clients receive a `JSON response` containing data to be processed. This includes an audio file for transcription, which is performed using OpenAI's `small` Whisper model. Transcribed results are then submitted back to the server via a `POST request`.
+The `demo_voice_transcription` project is a client-server simulation designed for audio transcription. Clients initialize by sending an ID in the `mock_server.py` server via a `GET request`. After initialization, clients receive a `JSON Response` containing data to be processed. This includes an audio file for transcription, which is performed using OpenAI's `small` Whisper Wodel. The transcribed results are then submitted back to the server via a `POST request`.
 
 ## Index
 
@@ -16,6 +16,7 @@ The `mock_jobserver_test` project is a client-server simulation designed for aud
 ## 🛠️ Prerequisites
 
 - Python 3.8 or higher
+- Docker (optional)
 
 <a name="components"></a>
 
@@ -25,7 +26,7 @@ The `mock_jobserver_test` project is a client-server simulation designed for aud
 
 ### `main.py`
 
-This Python script serves as the core logic for client-side operations. It communicates with the server, initializing the process by sending an `ID`. Upon receiving a `JSON response`, the script conducts transcription based on the provided data. Subsequently, it prepares a `JSON payload` containing the results to be sent back to the server.
+This Python script serves as the core logic for client-side operations. It communicates with the server, initializing the process by sending an `ID`. Upon receiving a `JSON Response`, the script conducts transcription based on the provided data. Subsequently, it prepares a `JSON payload` containing the results to be sent back to the server.
 
 ```json
 {
@@ -78,7 +79,7 @@ A file containing required `Python packages` and their versions for running the 
 1. **Set Up a Virtual Environment:**
 
 ```bash
-cd mock_jobserver_test
+cd demo_voice_trasncription
 python -m venv venv
 source venv/Scripts/activate
 ```
@@ -97,9 +98,13 @@ python mock_server.py
 
 <img src="../imgs/server_started.png"/>
 
-It will start the Flask server on `http://0.0.0.0:8080/`.
+It will start the Flask server on `http://[LOCAL_IP_ADDRESS]:8080/`.
 
 4. Execute `main.py` to submit audio data to the server for transcription. Ensure that the server is running before executing the client script.
+
+```bash
+python main.py
+```
 
 <img src="../imgs/main_started.png"/>
 
@@ -108,6 +113,30 @@ It will start the Flask server on `http://0.0.0.0:8080/`.
 `JSON payload` printed on server-side:
 
 <img src="../imgs/main_results.png"/>
+
+### 🐳 Using Docker
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/felixsuarez0727/demo-faster-whisper.git
+cd demo-faster-whisper/demo_voice_transcription
+```
+
+2. **Run the `docker-compose.yml` file:**
+
+```bash
+docker-compose up --build
+```
+
+<img src="../imgs/docker_server_client_results.png"/>
+
+### 🧪 Test on GCP Instance 6CPU cores / 6GB RAM
+
+| Test Run                                |
+| --------------------------------------- | -------------------------------------- |
+| ![Test Run](../imgs/test_gcp_run1.png)  | ![Test Run](../imgs/test_gcp_run2.png) |
+| ![Results](../imgs/results_gcp_run.png) |
 
 <a name="notes"></a>
 

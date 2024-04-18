@@ -5,25 +5,30 @@ import base64
 import numpy as np
 import scipy.io.wavfile as wav
 import os
+import socket
 from datetime import datetime, timezone, timedelta
 
 from audio_transcriber import transcribe_audio
 
+
 # Function to make a GET request to the server
-
-
 def make_request(url):
     response = requests.get(url)
     return response
 
+# Function to get the IP address of the mock server container
+def get_mock_server_ip():
+    return 'mock_server'
+
 # Main function to orchestrate the process
-
-
 def main():
+    # Get the IP address of the mock server
+    mock_server_ip = get_mock_server_ip()
+
     # URLs for server communication
-    url_get_access = 'http://192.168.1.3:8080/queue/whisper-queue'
-    url_get_content = 'http://192.168.1.3:8080/job/'
-    url_post_job = 'http://192.168.1.3:8080/job/'
+    url_get_access = f'http://{mock_server_ip}:8080/queue/whisper-queue'
+    url_get_content = f'http://{mock_server_ip}:8080/job/'
+    url_post_job = f'http://{mock_server_ip}:8080/job/'
 
     retries = 3  # Maximum number of retries
     job_id = None  # Variable to store the job ID
@@ -58,7 +63,7 @@ def main():
             f"Status Code: {response.status_code}, {response.reason}. Exiting.")
 
     if response.status_code == 200:
-        url_get_content = url_get_content + job_id
+        url_get_content = f'{url_get_content}{job_id}'
         content_response = make_request(url_get_content)
 
         if content_response.status_code == 200:
@@ -87,6 +92,10 @@ def main():
                         # Call the function to transcribe the audio
                         transcription_result = transcribe_audio(
                             "./audio_file_to_transcribe.wav")
+                        
+                        # Delete the audio file after transcription
+                        os.remove("audio_file_to_transcribe.wav")
+
                     else:
                         print("\033[91m" + "Error:" + "\033[0m" +
                               " Failed to create the audio file.")
@@ -106,7 +115,7 @@ def main():
             }
 
             # Send the data to the server using a POST request
-            url_post_job = url_post_job + job_id
+            url_post_job = f'{url_post_job}{job_id}'
             response = requests.post(url_post_job, json=data_to_send)
             if response.status_code == 200:
 
@@ -122,6 +131,9 @@ def main():
                   content_response.json().get('message'))
     else:
         print("\033[91m" + "Invalid request or job ID mismatch." + "\033[0m")
+
+    time.sleep(4)
+    print(data_to_send)
 
 
 if __name__ == "__main__":

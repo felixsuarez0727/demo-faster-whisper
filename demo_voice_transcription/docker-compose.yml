@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  mock_server:
+    build:
+      context: ./mock_server
+      dockerfile: Dockerfile_mock_server
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/mock_server
+
+  client_service:
+    build:
+      context: ./transcription_client
+      dockerfile: Dockerfile_transcription
+    volumes:
+      - .:/transcription_client
+    depends_on:
+      - mock_server
