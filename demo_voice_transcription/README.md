@@ -66,9 +66,9 @@ This server-side script, developed using the `Flask` framework, simulates a serv
 - Prints received data for verification.
 - Returns a success message upon successful POST request.
 
-#### `requirements.txt`
+#### `requirements_mock_server.txt` & `requirements_transcription.txt`
 
-A file containing required `Python packages` and their versions for running the project.
+Files containing required `Python packages` and their versions for running the project.
 
 <a name="usage"></a>
 
