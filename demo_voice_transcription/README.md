@@ -66,9 +66,13 @@ This server-side script, developed using the `Flask` framework, simulates a serv
 - Prints received data for verification.
 - Returns a success message upon successful POST request.
 
-#### `requirements_mock_server.txt` & `requirements_transcription.txt`
+### `requirements_mock_server.txt` & `requirements_transcription.txt`
 
 Files containing required `Python packages` and their versions for running the project.
+
+### `docker-compose.yaml`
+
+A file that enables easy orchestration of these services, allowing them to communicate with each other and share resources within the defined environment.
 
 <a name="usage"></a>
 
