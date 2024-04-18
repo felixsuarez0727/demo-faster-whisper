@@ -133,16 +133,16 @@ docker-compose up --build
 
 ### 🧪 Test on GCP Instance 6CPU cores / 6GB RAM
 
-<table style="margin-left:auto; margin-right:auto;">
+<table style="margin-left:auto; margin-right:auto; text-align:center;">
   <tr>
-    <th style="text-align:center;">GCP Instance Test</th>
+    <th colspan="2">GCP Instance Test</th>
   </tr>
   <tr>
-    <td style="text-align:center;"><img src="../imgs/test_gcp_run1.png" alt="Test Run 1" style="width:100%;"></td>
-    <td style="text-align:center;"><img src="../imgs/test_gcp_run2.png" alt="Test Run 2" style="width:100%;"></td>
+    <td><img src="../imgs/test_gcp_run1.png" alt="Test Run 1" style="width:100%;"></td>
+    <td><img src="../imgs/test_gcp_run2.png" alt="Test Run 2" style="width:100%;"></td>
   </tr>
   <tr>
-    <td colspan="2" style="text-align:center;"><img src="../imgs/result_gcp_run.png" alt="Results" style="width:100%;"></td>
+    <td colspan="2"><img src="../imgs/results_gcp_run.png" alt="Results" style="width:100%;"></td>
   </tr>
 </table>
 
