@@ -133,10 +133,18 @@ docker-compose up --build
 
 ### 🧪 Test on GCP Instance 6CPU cores / 6GB RAM
 
-| Test Run                                |
-| --------------------------------------- | -------------------------------------- |
-| ![Test Run](../imgs/test_gcp_run1.png)  | ![Test Run](../imgs/test_gcp_run2.png) |
-| ![Results](../imgs/results_gcp_run.png) |
+<table>
+  <tr>
+    <th>Test Run</th>
+  </tr>
+  <tr>
+    <td><img src="../imgs/test_gcp_run1.png" alt="Test Run 1"></td>
+    <td><img src="../imgs/test_gcp_run2.png" alt="Test Run 2"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="../imgs/results_gcp_run.png" alt="Results"></td>
+  </tr>
+</table>
 
 <a name="notes"></a>
 
