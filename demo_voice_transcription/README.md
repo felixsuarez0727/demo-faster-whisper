@@ -142,7 +142,7 @@ docker-compose up --build
     <td style="text-align:center;"><img src="../imgs/test_gcp_run2.png" alt="Test Run 2" style="width:100%;"></td>
   </tr>
   <tr>
-    <td colspan="2" style="text-align:center;"><img src="../imgs/results_gcp_run.png" alt="Results" style="width:100%;"></td>
+    <td colspan="2" style="text-align:center;"><img src="../imgs/result_gcp_run.png" alt="Results" style="width:100%;"></td>
   </tr>
 </table>
 
