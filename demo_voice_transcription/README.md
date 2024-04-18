@@ -1,4 +1,4 @@
-# 💻 Mock Job Server Test
+# 💻 Demo Voice Transcription
 
 The `demo_voice_transcription` project is a client-server simulation designed for audio transcription. Clients initialize by sending an ID in the `mock_server.py` server via a `GET request`. After initialization, clients receive a `JSON Response` containing data to be processed. This includes an audio file for transcription, which is performed using OpenAI's `small` Whisper Wodel. The transcribed results are then submitted back to the server via a `POST request`.
 
