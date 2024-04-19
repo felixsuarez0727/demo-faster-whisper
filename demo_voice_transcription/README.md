@@ -80,44 +80,6 @@ A file that enables easy orchestration of these services, allowing them to commu
 
 ## 🚀 Usage
 
-1. **Set Up a Virtual Environment:**
-
-```bash
-cd demo_voice_trasncription
-python -m venv venv
-source venv/Scripts/activate
-```
-
-2. **Install Dependencies:**
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the server by executing `python mock_server.py`.
-
-```bash
-python mock_server.py
-```
-
-<img src="../imgs/server_started.png"/>
-
-It will start the Flask server on `http://[LOCAL_IP_ADDRESS]:8080/`.
-
-4. Execute `main.py` to submit audio data to the server for transcription. Ensure that the server is running before executing the client script.
-
-```bash
-python main.py
-```
-
-<img src="../imgs/main_started.png"/>
-
-5. **Results:**
-
-`JSON payload` printed on server-side:
-
-<img src="../imgs/main_results.png"/>
-
 ### 🐳 Using Docker
 
 1. **Clone the repository:**
@@ -132,6 +94,8 @@ cd demo-faster-whisper/demo_voice_transcription
 ```bash
 docker-compose up --build
 ```
+
+2. **Results:**
 
 <img src="../imgs/docker_server_client_results.png"/>
 
