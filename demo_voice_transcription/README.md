@@ -95,7 +95,7 @@ cd demo-faster-whisper/demo_voice_transcription
 docker-compose up --build
 ```
 
-2. **Results:**
+3. **Results:**
 
 <img src="../imgs/docker_server_client_results.png"/>
 
