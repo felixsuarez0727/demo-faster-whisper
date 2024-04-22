@@ -18,7 +18,7 @@ def make_request(url):
 
 # Function to get the IP address of the mock server container
 def get_mock_server_ip():
-    return 'mock_server'
+    return '127.0.0.1'
 
 # Main function to orchestrate the process
 def main():
