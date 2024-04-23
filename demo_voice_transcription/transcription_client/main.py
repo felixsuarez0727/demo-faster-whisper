@@ -7,6 +7,7 @@ import scipy.io.wavfile as wav
 import os
 import socket
 from datetime import datetime, timezone, timedelta
+import io  # Import the io module
 
 from audio_transcriber import transcribe_audio
 
@@ -82,23 +83,21 @@ def main():
                     audio_np = np.frombuffer(audio_bytes, dtype=np.int16)
                     # Set the audio parameters
                     sample_rate = 16000
-                    # Save the audio as a WAV file
-                    wav.write("audio_file_to_transcribe.wav", sample_rate, audio_np)
 
-                    if os.path.isfile("audio_file_to_transcribe.wav"):
-                        print("\033[92mBased64 Audio Converted to \033[0m" +
-                              "\033[96maudio_file_to_transcribe.wav\033[0m" + "\033[92m Successfully.\033[0m")
+                    # Create an in-memory file-like object
+                    audio_file = io.BytesIO()
+                    # Write audio data to the in-memory file
+                    wav.write(audio_file, sample_rate, audio_np)
 
-                        # Call the function to transcribe the audio
-                        transcription_result = transcribe_audio(
-                            "./audio_file_to_transcribe.wav")
-                        
-                        # Delete the audio file after transcription
-                        os.remove("audio_file_to_transcribe.wav")
+                    # Set the file pointer to the beginning of the in-memory file
+                    audio_file.seek(0)
 
-                    else:
-                        print("\033[91m" + "Error:" + "\033[0m" +
-                              " Failed to create the audio file.")
+                    # Call the function to transcribe the audio
+                    transcription_result = transcribe_audio(audio_file)
+
+                    # Close the in-memory file
+                    audio_file.close()
+
                 except Exception as e:
                     print("\033[91m" + "Error:" + "\033[0m" +
                           "processing audio data:", e)

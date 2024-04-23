@@ -237,7 +237,9 @@ In this experiment, we examined the performance of audio file processing using t
 
 1. **All audios:**
 
-**_Comparative table_**
+**Comparative table**
+
+**_1m 54s_**
 
 | Audio File | Hours | Minutes | Seconds |
 | ---------- | ----- | ------- | ------- |
@@ -246,6 +248,37 @@ In this experiment, we examined the performance of audio file processing using t
 | hp0.wav    | 0     | 0       | 41      |
 | mm0.wav    | 0     | 0       | 9       |
 
-**Total Processing Time: 1 minutes, 54 seconds**
-
 <img src="./imgs/local_test_results.png"/>
+
+**Loading small Whisper model Locally through .pt file**
+
+**_2m 29s_**
+
+| Audio File | Hours | Minutes | Seconds |
+| ---------- | ----- | ------- | ------- |
+| gb0.wav    | 0     | 0       | 28      |
+| gb1.wav    | 0     | 0       | 39      |
+| hp0.wav    | 0     | 0       | 44      |
+| mm0.wav    | 0     | 0       | 18      |
+
+**Loading small Whisper model Locally and using num_workers=4, cpu_threads=8 Process in Memory**
+
+**_2m 45s_**
+
+| Audio File | Hours | Minutes | Seconds |
+| ---------- | ----- | ------- | ------- |
+| gb0.wav    | 0     | 0       | 37      |
+| gb1.wav    | 0     | 0       | 47      |
+| hp0.wav    | 0     | 0       | 59      |
+| mm0.wav    | 0     | 0       | 12      |
+
+**Loading small Whisper model Locally through faster-whisper**
+
+**_2m 18s_**
+
+| Audio File | Hours | Minutes | Seconds |
+| ---------- | ----- | ------- | ------- |
+| gb0.wav    | 0     | 0       | 33      |
+| gb1.wav    | 0     | 0       | 41      |
+| hp0.wav    | 0     | 0       | 53      |
+| mm0.wav    | 0     | 0       | 11      |

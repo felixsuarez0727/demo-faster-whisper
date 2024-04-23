@@ -1,10 +1,9 @@
 from faster_whisper import WhisperModel
 import time
 from typing import Tuple
-import whisper
 
 # Load the model once from local folder
-model = WhisperModel("small", device="cpu", num_workers=4, cpu_threads=2)
+model = WhisperModel("small", device="cpu", num_workers=4, cpu_threads=8)
 
 
 def transcribe_audio(audio_file_path: str) -> Tuple[str, str, str]:
@@ -48,11 +47,4 @@ def transcribe_audio(audio_file_path: str) -> Tuple[str, str, str]:
         print("An error occurred:", e)
         return "", "Error occurred during transcription", "Unknown"
 
-
-
-
-# transcribed_text, processing_time_str, language_info = transcribe_audio("./audio_to_transcribe.wav", model)
-# print(transcribed_text)
-# print(processing_time_str)
-# print("Detected language:", language_info)
 
