@@ -1,9 +1,13 @@
 from faster_whisper import WhisperModel
 import time
 from typing import Tuple
+import multiprocessing
+
+# Determine the number of CPU cores available
+cpu_count = multiprocessing.cpu_count()
 
 # Load the model once from local folder
-model = WhisperModel("small", device="cpu", num_workers=4, cpu_threads=8)
+model = WhisperModel("small", device="cpu", num_workers=4, cpu_threads=min(8, cpu_count))
 
 
 def transcribe_audio(audio_file_path: str) -> Tuple[str, str, str]:
